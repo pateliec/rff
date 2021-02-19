@@ -1,0 +1,420 @@
+  /*@media screen and (max-width: 1020px){
+.shownav {
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    font-size: 0;
+    z-index: 99999;
+    border-radius: 5px;
+}
+}
+.container#home {
+    text-align: center;
+    height: 100%;
+    padding: 0;
+}
+header#banner {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0 30px;
+    text-align: center;
+}
+.shownav {
+    display: none;
+}
+.nav {
+    display: block;
+    padding: 40px 30px 0;
+    max-width: 1150px;
+    float: none;
+}
+.wrap{
+    margin: 0 auto;
+    position: relative;
+}
+@media screen and (max-width: 1550px){
+.nav ul:nth-child(odd) {
+    clear: left;
+}
+}
+.nav ul.left {
+    color:#fff;
+    float: left;
+    text-align: left;
+    margin: 0;
+}
+@media screen and (max-width: 1550px){
+.nav ul {
+    display: block;
+    width: 48.82117%;
+}
+}
+.nav ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+@media screen and (max-width: 1550px){
+.nav ul li:nth-child(odd) {
+    clear: left;
+}
+}
+@media screen and (max-width: 1550px){
+.nav ul li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    padding: 5px;
+    margin: 0 2px;
+}
+}
+.nav ul li.home a {
+    text-align: center;
+}
+.nav ul.right {
+    float: right;
+    text-align: right;
+}
+.nav ul.right li {
+    float: right;
+}
+
+header#banner .logo {
+    width: 180px;
+    height: 70px;
+    display: block;
+    font-size: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('Rottnest-Fast-Ferries_logo.png');
+    background-size: contain;
+}
+.logo {
+
+    width: 129px;
+    display: inline-block;
+    text-align: center;
+    height: 82px;
+    background-size: 129px 50px;
+    background-position: top;
+    left: auto;
+    margin: -10px auto 0;
+    position: relative;
+    background-repeat: no-repeat;  
+    transform: translateY(-50%);
+    top: 74px; 
+    background-image: url('mobilerottnest-fast-ferries_logo.png');
+}
+
+body {
+    background-image: url('../images/fe8ddf177d725e2e6a8a55770dd6d5a5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+}
+.nav.wrap ul li a{color:#fff;}
+#banner{
+    display:block;
+}
+@media(max-width: 760px){
+    #banner{
+        display:none;
+        }
+}
+@media(max-width: 760px){
+.mobile-container {
+display: block!important;}
+}
+.mobile-container {
+    display: none;
+  max-width: 480px;
+  margin: auto;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #transparent;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.linksmy{
+      background-color: #01b4e6;
+
+}
+ .linksmy a:hover{
+  background-color: #01b4e6;
+  color: #fff;
+}
+.active {
+  background-color: transparent;
+  color: white;
+}*/
+    	/********desktop_useraccount_page_styles***********/
+    .wrap {
+        max-width: 1400px;
+        padding: 0 20px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .account {
+        background: #f5f5f5;
+        border-radius: 6px;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+        max-width: 1100px;
+        margin: 50px auto;
+        font-size: 15px;
+        position: relative;
+    }
+    section {
+        display: block;
+    }
+    .account header.title{
+    	background: linear-gradient(180deg,#f5f5f7 0,#e6e6e7);
+        padding: 45px 80px;
+        position: relative;
+        border-radius: 6px 6px 0 0;
+    }
+    .account header.title h1 {
+        text-transform: uppercase;
+        color: #01b4e6;
+    }
+    h1, h2, h3, h4, h5 {
+        font-weight: 700;
+    }
+    .account .title .tabs {
+        position: absolute;
+        right: 80px;
+        bottom: 0;
+    }
+    .account .title .tabs ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .account .title .tabs ul li:first-child{
+        border-radius: 6px 0 0 0;
+    }
+    .account .title .tabs ul li:last-child{
+        border-radius:0 6px 0 0;
+    }
+    .account .title .tabs ul li.active{
+        background: #01b4e6;
+        color: #fff;
+    }
+    .account .title .tabs ul li{
+    	color:#333;
+        float: left;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 30px;
+        background: #fff;
+        margin: 0 0 0 1px;
+        cursor: pointer;
+    }
+    .account{
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+        max-width: 1100px;
+        font-size: 15px;
+        position: relative;
+    }
+    .account .booking_data {
+        padding: 40px 80px 50px;
+    }
+    .account .booking_data{
+    	position: relative;
+    }
+    .account .booking_data .helpers{
+        padding: 0 0 20px;
+    }
+    ul{padding-inline-start: 0px}
+    .account .booking_data .helpers h2:not(.modal_title){
+        background: #fff;
+        padding: 10px 25px;
+        color:#333;
+        border: 1px solid #e8e8e8;
+        display: inline-block;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    .account .booking_data .helpers h2:not(.modal_title).profile:before {
+        content: "\E96B";
+    }
+    .account .booking_data .helpers h2:not(.modal_title):before{
+        color: #01b4e6;
+        margin: 0 10px 0 0;
+    }
+    .account .booking_data .helpers h2:not(.modal_title):before{
+        font-family: icomoon!important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+    }
+    #table {
+        display: block;
+        border: 1px solid #dedede;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #fff;
+    }
+    .account .booking_data .customerinfo{
+    	padding: 0 40px;
+        border-radius: 5px;
+    }
+    .account ul{list-style: none;}
+    .account .booking_data .customerinfo li.row0 {
+        border-bottom: 2px solid hsla(0,0%,87%,.8);
+    }
+    .account .booking_data .customerinfo li.row1 {
+        border-bottom: 2px solid hsla(0,0%,87%,.8);
+    }
+    .account .booking_data .customerinfo li.row0, .account .booking_data .customerinfo li.row1, .account .booking_data .customerinfo li.row2{
+        padding: 40px 0 200px;
+        background-color: #fff;
+    }
+    .account .booking_data .customerinfo li.row0 ul, .account .booking_data .customerinfo li.row1 ul, .account .booking_data .customerinfo li.row2 ul, .account .booking_data .customerinfo li.row ul{
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 46.82117%;
+    }	
+    .account .booking_data .customerinfo li.row0 .row-title, .account .booking_data .customerinfo li.row1 .row-title, .account .booking_data .customerinfo li.row2 .row-title, .account .booking_data .customerinfo li.row .row-title{
+        font-weight: 700;
+        font-size: 16px;
+        color: #01b4e6;
+        padding: 0 0 10px;
+        text-transform: uppercase;
+    }
+    li{
+        background: transparent;
+        border: 0;
+        margin: 0;
+    }
+    .account .booking_data .customerinfo li.row0 ul li.label, .account .booking_data .customerinfo li.row1 ul li.label, .account .booking_data .customerinfo li.row2 ul li.label, .account .booking_data .customerinfo li.row ul li.label{
+        padding: 5px 0 0;
+        color:#333;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .account .booking_data .customerinfo li.row0 ul li.value, .account .booking_data .customerinfo li.row1 ul li.value, .account .booking_data .customerinfo li.row2 ul li.value, .account .booking_data .customerinfo li.row ul li.value {
+        font-size: 14px;
+        font-weight: normal;
+        color:#333;
+        text-align: left!important;
+    }
+
+    /*************mobile vieww customer accountpage**************/
+    @media screen and (max-width: 1020px){
+    .wrap{padding: 0;}
+    .account {
+        margin: 0; 
+    }
+    @media screen and (max-width: 440px){
+    .account header.title .tabs ul li {
+        padding: 0 5px;
+    }
+    }
+    @media screen and (max-width: 1020px){
+    .account header.title .tabs ul li {
+        padding: 0 5px;
+        background: none!important;
+        box-shadow: none!important;
+        border-radius: 0!important;
+        height: 50px;
+        line-height: 30px;
+    }
+    }
+    .account header.title {
+        padding: 30px 10px;
+        border-radius: 0!important;
+    }
+    .account header.title h1 {
+        padding: 0 20px 50px;
+    }
+    .account header.title .tabs{
+    display: block;
+        left: 30px;
+    }
+    .account header.title .tabs ul li.active, .account header.title .tabs ul li.active:before{
+        color: #01b4e6;
+    }
+    .account header.title .tabs ul li:after, .account header.title .tabs ul li:before{
+        display: block;
+        text-align: center;
+        font-family: icomoon!important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: #222;
+        margin: 0 10px 0 0;
+    }
+    .account .booking_data .helpers {
+        display: none;
+    }
+    .account .booking_data {
+        padding: 0;
+    }
+    .account .booking_data .customerinfo li.row0, .account .booking_data .customerinfo li.row1, .account .booking_data .customerinfo li.row2 {
+        padding: 40px 0 320px;
+        background-color: #fff;
+    }
+    }
+    @media screen and (max-width: 800px){
+    .account .booking_data .customerinfo li.row0 ul, .account .booking_data .customerinfo li.row1 ul, .account .booking_data .customerinfo li.row2 ul, .account .booking_data .customerinfo li.row ul{
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+    }
+    }
+    @media screen and (min-width: 800px){
+    	.user-account-page .content.wrap .account .title .tabs ul li .fa {display:none;}
+    }
+.myaccount-view li.view {
+    font-weight: 400;
+    float: right;
+    display: inline-block;
+    text-align: unset !important;
+    text-transform: capitalize;
+}

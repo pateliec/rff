@@ -1,0 +1,1226 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rottnest Fast Ferries</title>
+  <meta name="description" content="Book your Trip with Rottnest Fast Ferries">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Rottnest Fast Ferries">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <!-- Fonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/lgz4anw.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/vue-select.css" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="site-header">
+    <nav
+      class="navbar container flex-row align-items-center justify-content-between pt-3 px-md-4 color-white bottom-wave box-shadow">
+
+      <button id="navToggle" class="custom-toggle navbar-toggler" type="button">
+        <i class="text-white fas fa-bars"></i>
+      </button>
+
+      <a class="my-0 mr-md-auto mb-sm-2 logo-wrapper" href="../index.html" aria-label="Product">
+        <img class="logo mx-auto" src="../img/Rottnest-Fast-Ferries_logo.png" alt="Rottnest Fast Ferries Logo">
+      </a>
+
+      <div class="dropdown">
+        <a class="p-2 text-white dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false"><i class="ml-2 mr-2 fas fa-sign-in-alt d-none d-sm-inline-block"></i>Log in</a>
+        <div class="dropdown-menu dropdown-menu-right text-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-dark" href="#"><i class="fas fa-user mr-2"></i>Customer Login</a>
+          <a class="dropdown-item text-dark" href="#"><i class="demo-icon agent-icon mr-2"></i>Agent Login</a>
+        </div>
+      </div>
+
+      <!-- Navigation-->
+      <div id="navbarNav" class="sidenav">
+        <button class="closeBtn"><i class="fas fa-times"></i></button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class=" p-2 text-white nav-item nav-link " href="#"><i
+                class="ml-2 mr-2 icon demo-icon gift-card-icon"></i>Gift Cards</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <main id="app" class="body-wrapper wizard">
+    <div class="container">
+      <!-- Search Header -->
+      <section class="search-header py-lg-4 py-2 text-center">
+        <h1>Rottnest Ferries</h1>
+        <a href="../index.html" class="edit-search">Change Search<i class="fas fa-pencil-alt ml-2"></i></a>
+      </section>
+
+      <!-- Steps Guide -->
+      <section class="booking-navigation py-lg-4 py-2">
+        <div class="d-flex flex-row step-groups">
+          <a href="#" class="p-2 step step-5 active">
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+              <div class="d-md-block d-none step-jumbo mr-2">1</div>
+              <div class="text-uppercase step-title">
+                <i class="demo-icon ferry-icon"> </i> <br>
+                Ferries
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="p-2 step step-5 disabled">
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+              <div class="d-md-block d-none step-jumbo mr-2">2</div>
+              <div class="text-uppercase step-title">
+                <i class="demo-icon packages-icon"></i> <br>
+                Luggage
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="p-2 step step-5 disabled">
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+              <div class="d-md-block d-none step-jumbo mr-2">3</div>
+              <div class="text-uppercase step-title">
+                <i class="demo-icon extras-icon"></i> <br>
+                Extras
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="p-2 step step-5 disabled">
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+              <div class="d-md-block d-none step-jumbo mr-2">4</div>
+              <div class="text-uppercase step-title">
+                <i class="fas fa-user "></i> <br>
+                Passenger Details
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="p-2 step step-5 disabled">
+            <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+              <div class="d-md-block d-none step-jumbo mr-2">5</div>
+              <div class="text-uppercase step-title">
+                <i class="demo-icon dollar-icon"></i> <br>
+                Payment
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Step 1: Ferry-->
+      <section class="ferry-options py-3">
+        <div class="row">
+          <div class="col-lg-9 col-md-8">
+            <h2 class="inline-heading">Choose Your Ferries</h2>
+
+            <div class="ferry-from pb-2">
+              <h3>Departing Ferry</h3>
+              <div class="row ferry-place-date-wrapper">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                  <h5 class=ferry-place-date><i class="demo-icon ferry-icon"> </i> Hillarys to Rottnest Island - <span
+                      class="date">Sunday, 03 January 2021</span></h5>
+                </div>
+                <div class="col-xl-5 col-md-5 d-lg-block d-none">
+                  <div class="row pricing-row">
+                    <div class="col-sm-6 pricing-wrapper">
+                      <div class="fare-header quokka">
+                        Promotion Fare <i class="demo-icon icon-awesome-info-circle-icon" data-toggle="tooltip"
+                          title="This fare option may incur additonal charges should you need to change your travel date or time. Standard Terms & Connditions apply."
+                          data-placement="top" tab-index="0"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 pricing-wrapper">
+                      <div class="fare-header everyday">
+                        Everyday Fare
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="time-options border">
+                <div class="row">
+                  <div class="time-row col-xl-7 col-lg-7 col-12 py-2">
+                    <div class="row">
+                      <div class="col-md-3 col-4 time depart-time">7:30am</div>
+
+                      <div class="col-md-6 col-4 ferry-duration">
+                        <div class="row mx-0">
+                          <div class="col-md-1 col-2 px-0">
+                            <i class="demo-icon ferry-icon "></i>
+                          </div>
+                          <div class="col-md-10 col-9 px-0">
+                            <div class="journey-line"></div>
+                          </div>
+                          <div class="col-1 px-0">
+                            <i class="fas fa-map-marker-alt "></i>
+                          </div>
+                          <!---->
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-4 text-right time">8:15am</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="origin"> Hillarys - Departure</span>
+                      </div>
+
+                      <div class="col-6 text-right">
+                        <span class="origin"> Rottnest - Arrival</span>
+                      </div>
+                    </div>
+
+                    <a class="d-lg-block d-none toggle-price" data-toggle="collapse" data-target="#pricingDetailOne"
+                      aria-expanded="false" aria-controls="pricingDetailOne">
+                      Pricing Details <i class="fas fa-angle-down"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="row pricing-row align-items-end">
+                      <div class="pricing-toggle-show-md col-3 py-2">
+                        <a class="toggle-price text-left d-block" data-toggle="collapse" data-target="#pricingDetailOne"
+                          aria-expanded="false" aria-controls="pricingDetailOne">
+                          Pricing Details&nbsp;<i class="fas fa-angle-down"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-12 col-9 h-100">
+                        <div class="row h-100">
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type quokka-saver p-2">
+                              <img src="../img/quokka.svg"
+                                alt="quokka saver icon - quokka head by Rottnest Fast Ferries"
+                                class="quokka-icon fare-icon">
+                              <div class="fare-title text-uppercase">Quokka Saver</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">45.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type everyday-fare p-2">
+                              <i class="demo-icon ferry-icon"></i>
+                              <div class="fare-title text-uppercase">Everyday Fare</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">55.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- //close md-8-->
+                </div>
+
+                <!-- Pricing Toggle -->
+                <div id="pricingDetailOne" class="collapse pricing-detail" aria-labelledby="pricingDetailOne">
+                  <!-- Pricing Header -->
+                  <div class="row pricing-detail-row border-top">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-end h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 pt-2 text-right text-uppercase">
+                            Quokka Saver
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="shade everyday-fare px-2 pt-2 text-right text-uppercase">
+                            Everyday Fare
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pricing Row -->
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Adult (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">27.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Child (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">18.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">20.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row subtotal align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-3 text-uppercase">
+                      Subtotal
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">45.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">55.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="time-options border">
+                <div class="row">
+                  <div class="time-row col-xl-7 col-lg-7 col-12 py-2">
+                    <div class="row">
+                      <div class="col-md-3 col-4 time depart-time">10:00am</div>
+
+                      <div class="col-md-6 col-4 ferry-duration">
+                        <div class="row mx-0">
+                          <div class="col-md-1 col-2 px-0">
+                            <i class="demo-icon ferry-icon "></i>
+                          </div>
+                          <div class="col-md-10 col-9 px-0">
+                            <div class="journey-line"></div>
+                          </div>
+                          <div class="col-1 px-0">
+                            <i class="fas fa-map-marker-alt "></i>
+                          </div>
+                          <!---->
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-4 time text-right">10:45am</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <span class="origin">Hillarys - Departure</span>
+                      </div>
+                      <div class="col-6 text-right">
+                        <span class="origin"> Rottnest - Arrival</span>
+                      </div>
+                    </div>
+
+                    <a class="d-lg-block d-none toggle-price" data-toggle="collapse" data-target="#pricingDetailTwo"
+                      aria-expanded="false" aria-controls="pricingDetailTwo">
+                      Pricing Details <i class="fas fa-angle-down"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="row pricing-row align-items-end">
+                      <div class="pricing-toggle-show-md col-3 py-2">
+                        <a class="toggle-price text-left d-block" data-toggle="collapse" data-target="#pricingDetailTwo"
+                          aria-expanded="false" aria-controls="pricingDetailTwo">
+                          Pricing Details&nbsp;<i class="fas fa-angle-down"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-12 col-9 h-100">
+                        <div class="row h-100">
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type quokka-saver p-2">
+                              <img src="../img/quokka.svg"
+                                alt="quokka saver icon - quokka head by Rottnest Fast Ferries"
+                                class="quokka-icon fare-icon">
+                              <div class="fare-title text-uppercase">Quokka Saver</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">45.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type everyday-fare p-2">
+                              <i class="demo-icon ferry-icon"></i>
+                              <div class="fare-title text-uppercase">Everyday Fare</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">55.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- //close md-8-->
+                </div>
+
+                <!-- Pricing Toggle -->
+                <div id="pricingDetailTwo" class="collapse pricing-detail" aria-labelledby="pricingDetailTwo">
+                  <!-- Pricing Header -->
+                  <div class="row pricing-detail-row border-top">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-end h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 pt-2 text-right text-uppercase">
+                            Quokka Saver
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="shade everyday-fare px-2 pt-2 text-right text-uppercase">
+                            Everyday Fare
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pricing Row -->
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Adult (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">27.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Child (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">18.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">20.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row subtotal align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-3 text-uppercase">
+                      Subtotal
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">45.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">55.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="info-bar pb-2">
+                <p>Our Promotion Fare (Fast Fare and Quokka Fare) are only available at limited seats. This fare option may incur additonal charges should you need to change your travel date or time. Standard Terms & Connditions apply.</p>
+              </div>
+            </div>
+
+            <div class="ferry-to pb-2">
+              <h3>Returning Ferry</h3>
+              <div class="row ferry-place-date-wrapper">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                  <h5 class=ferry-place-date><i class="demo-icon returning-ferry-icon"> </i> Hillarys to Rottnest Island
+                    - <span class="date">Tuesday, 05 January 2020</span></h5>
+                </div>
+                <div class="col-xl-5 col-md-5 d-lg-block d-none">
+                  <div class="row pricing-row">
+                    <div class="col-sm-6 pricing-wrapper">
+                      <div class="fare-header quokka">
+                        Promotion Fare <i class="demo-icon icon-awesome-info-circle-icon" data-toggle="tooltip"
+                          title="This fare option may incur additonal charges should you need to change your travel date or time. Standard Terms & Connditions apply."
+                          data-placement="top" tab-index="0"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 pricing-wrapper">
+                      <div class="fare-header everyday">
+                        Everyday Fare
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="time-options border">
+                <div class="row">
+                  <div class="time-row col-xl-7 col-lg-7 col-12 py-2">
+                    <div class="row">
+                      <div class="col-md-3 col-4 time return-time">10:00am</div>
+
+                      <div class="col-md-6 col-4 ferry-duration">
+                        <div class="row mx-0">
+                          <div class="col-md-1 col-2 px-0">
+                            <i class="demo-icon ferry-icon "></i>
+                          </div>
+                          <div class="col-md-10 col-9 px-0">
+                            <div class="journey-line"></div>
+                          </div>
+                          <div class="col-1 px-0">
+                            <i class="fas fa-map-marker-alt "></i>
+                          </div>
+                          <!---->
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-4 time text-right">10:45am</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6 origin">
+                        Rottnest - Departure
+                      </div>
+                      <div class="col-6 origin text-right">
+                        Hillarys - Arrival
+                      </div>
+                    </div>
+
+
+                    <a class="d-lg-block d-none toggle-price" data-toggle="collapse" data-target="#pricingDetailThree"
+                      aria-expanded="false" aria-controls="pricingDetailThree">
+                      Pricing Details <i class="fas fa-angle-down"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="row pricing-row align-items-end">
+                      <div class="pricing-toggle-show-md col-3 py-2">
+                        <a class="toggle-price text-left d-block" data-toggle="collapse"
+                          data-target="#pricingDetailThree" aria-expanded="false" aria-controls="pricingDetailThree">
+                          Pricing Details&nbsp;<i class="fas fa-angle-down"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-12 col-9 h-100">
+                        <div class="row h-100">
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type fast-fare p-2">
+                              <i class="demo-icon icon-fast-fare"></i>
+                              <div class="fare-title text-uppercase">Fast Fare</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">25.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type everyday-fare p-2">
+                              <i class="demo-icon ferry-icon"></i>
+                              <div class="fare-title text-uppercase">Everyday Fare</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">55.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- //close md-8-->
+                </div>
+
+                <!-- Pricing Toggle -->
+                <div id="pricingDetailThree" class="collapse pricing-detail" aria-labelledby="pricingDetailThree">
+                  <!-- Pricing Header -->
+                  <div class="row pricing-detail-row border-top">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-end h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade fast-fare px-2 pt-2 text-right text-uppercase">
+                            Fast Fare
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="shade everyday-fare px-2 pt-2 text-right text-uppercase">
+                            Everyday Fare
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pricing Row -->
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Adult (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade fast-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">15.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="adult-price">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Child (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade fast-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">10.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value"
+                              data-attribute="child-price">20.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row subtotal align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-3 text-uppercase">
+                      Subtotal
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade fast-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">27.00</span>
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span><span class="money-value">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="time-options border">
+                <div class="row">
+                  <div class="time-row col-xl-7 col-lg-7 col-12 py-2">
+                    <div class="row">
+                      <div class="col-md-3 col-4 time return-time">4:30pm</div>
+
+                      <div class="col-md-6 col-4 ferry-duration">
+                        <div class="row mx-0">
+                          <div class="col-md-1 col-2 px-0"><i class="demo-icon ferry-icon "></i></div>
+                          <div class="col-md-10 col-9 px-0">
+                            <div class="journey-line"></div>
+                          </div>
+                          <div class="col-1 px-0"><i class="fas fa-map-marker-alt "></i></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3 col-4 time text-right"> 5:15pm </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6 origin">
+                        Rottnest - Departure
+                      </div>
+                      <div class="col-6 origin text-right">
+                        Hillarys - Arrival
+                      </div>
+                    </div>
+
+                    <a class="d-lg-block d-none toggle-price" data-toggle="collapse" data-target="#pricingDetailFour"
+                      aria-expanded="false" aria-controls="pricingDetailFour">
+                      Pricing Details <i class="fas fa-angle-down"></i>
+                    </a>
+                  </div>
+
+                  <div class="col-xl-5 col-lg-5">
+                    <div class="row pricing-row align-items-end">
+                      <div class="pricing-toggle-show-md col-3 py-2">
+                        <a class="toggle-price text-left d-block" data-toggle="collapse" data-target="pricingDetailFour"
+                          aria-expanded="false" aria-controls="pricingDetailFour">
+                          Pricing Details&nbsp;<i class="fas fa-angle-down"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-12 col-9 h-100">
+                        <div class="row h-100">
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type quokka-saver unavailable p-2">
+
+                              <div class="fare-title text-uppercase">Promotion Fare</div>
+                              <div class="unavailable-msg"> NOT AVAILABLE <br> for this time</div>
+                            </div>
+                          </div>
+                          <div class="pricing-wrapper col-6">
+                            <div class="fare fare-type everyday-fare p-2">
+                              <i class="demo-icon ferry-icon"></i>
+                              <div class="fare-title text-uppercase"> Everyday Fare</div>
+                              <div class="price"><span class="money-currency">$</span><span
+                                  class="money-value">55.00</span> </div>
+                              <button class="btn btn-select"> Select</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- //close md-8-->
+                </div>
+
+                <!-- Pricing Toggle -->
+                <div id="pricingDetailFour" class="collapse pricing-detail" aria-labelledby="pricingDetailFour">
+                  <!-- Pricing Header -->
+                  <div class="row pricing-detail-row border-top">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-end h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 pt-2 text-right text-uppercase">
+                            Quokka Saver
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 pt-2 text-right text-uppercase">
+                            Everyday Fare
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pricing Row -->
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Adult (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            N/A
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span>
+                            <span class="money-value" data-attribute="adult-price">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row">
+                    <div class="col-xl-7 col-lg-7 col-3">
+                      Child (x1)
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            N/A
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span>
+                            <span class="money-value" data-attribute="child-price">20.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row pricing-detail-row subtotal align-items-center">
+                    <div class="col-xl-7 col-lg-7 col-3 text-uppercase">
+                      Subtotal
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-9">
+                      <div class="row align-items-center h-100">
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade quokka-saver px-2 text-right">
+                            N/A
+                          </div>
+                        </div>
+                        <div class="col-6 pricing-wrapper">
+                          <div class="h-100 shade everyday-fare px-2 text-right">
+                            <span class="money-currency">$</span>
+                            <span class="money-value">34.50</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="info-bar pb-4">
+                <p>Our Promotion Fare (Fast Fare and Quokka Fare) are only available at limited seats. This fare option may incur additonal charges should you need to change your travel date or time. Standard Terms & Connditions apply.</p>
+              </div>
+            </div>
+
+
+            <!-- @pickup @Bus pickup question-->
+            <div id="busPopupTrigger" class="alert alert-info pb-4" role="alert" style="display: none;">
+              <h3>Bus pickup</h3>
+              <div>Free coach transfers are available from selected hotels to our ferry terminal at Hillarys Boat
+                Harbour.</div>
+              <div class="bus-cta">
+                <a id="busModalTrigger" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#busModal">Add
+                  Bus Pickup</a>
+                <a id="removeBusPickup" class="btn btn-remove btn-xs" style="display: none;"
+                  v-on:click="removeBus">Remove bus pickup</a>
+              </div>
+            </div>
+
+            <!-- Pickup Modal -->
+            <!-- Bus Modal -->
+            <div class="modal fade" id="busModal" tabindex="-1" role="dialog" aria-labelledby="busModal"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bus pickup</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <label>Select your closest pickup point from the list below</label>
+                    <v-select :options="morningPickups" v-model="pickupPoint" placeholder="Select a pickup point"
+                      id="morningPickups"></v-select :value="pickupPoint.label">
+                    <v-select :options="lateMorningPickups" v-model="pickupPoint" placeholder="Select a pickup point"
+                      id="lateMorningPickups"></v-select :value="pickupPoint.label">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-cancel" data-dismiss="modal">CANCEL</button>
+                    <button id="saveBus" type="button" class="btn btn-sm btn-primary"
+                      v-bind:class="{ disabled: !pickupPoint }" v-on:click="saveBus">SAVE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div> <!-- col-md-9-->
+
+
+
+          <!-- Sidebar ; Booking Summary-->
+          <div class="col-lg-3 col-md-4">
+            <!-- Booking Summary-->
+            <div class="booking-summary-wrapper">
+              <h2> Booking Summary</h2>
+            </div>
+
+            <div class="summary-accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#admissionFee"
+                    aria-expanded="true" aria-controls="admissionFee">
+                    <i class="demo-icon icon-title icon-ticket"></i>
+                    Admission Fee <i data-toggle="tooltip" title="" data-placement="top" tab-index="0"
+                      data-original-title="The entrance fee to an A-Class nature reserve and contributes to the conservation of the island. This is a government tax payable by all visitors to the island and is collected by the ferry companies on behalf of the Rottnest Island Authority"
+                      class="demo-icon icon-awesome-info-circle-icon ml-2 text-white"></i>
+                    <div class="icon-toggle">
+                      <i class="fas fa-chevron-up"></i>
+                    </div>
+                  </button>
+                </div>
+
+                <div id="admissionFee" class="booking-body collapse show" aria-labelledby="admissionFee">
+                  <table class="booking-table">
+                    <tbody class="summary-item">
+                      <tr>
+                        <td class="table-item item-pass">Adult (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="adult-price" class="money-value">19.50</span></td>
+                      </tr>
+                      <tr>
+                        <td class="table-item item-pass">Kid (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="child-price" class="money-value">7.00</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div class="line"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table-item item-subtotal item-last">Subtotal </td>
+                        <td class="table-item item-price item-subtotal item-last"><span
+                            class="money-currency">$</span><span class="money-value">26.50</span></td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+
+              <!-- @Ferries-->
+              <div class="card">
+                <div class="card-header">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#ferries" aria-expanded="true" aria-controls="ferries">
+                    <i class="demo-icon icon-title ferry-icon"></i>
+                    Ferries
+                    <div class="icon-toggle">
+                      <i class="fas fa-chevron-up"></i>
+                    </div>
+                  </button>
+                </div>
+                <div id="ferries" class="booking-body collapse show" aria-labelledby="ferries">
+                  <table class="booking-table">
+                    <tbody class="summary-item">
+                      <tr>
+                        <td colspan="2" class="table-item item-heading">Hillarys to Rottnest Ferry Ticket</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="table-item item-subheading">Sun, 03 Jan 2021 <span
+                            class="write-depart-time"></span></td>
+                      </tr>
+                      <tr class="temp-departure-show">
+                        <td colspan="2" class="table-item item-fare-type item-depart-fare-type">
+                          <span class="quokka-saver">Quokka Saver</span></td>
+                      </tr>
+                      <tr class="temp-departure-show">
+                        <td class="table-item item-pass">Adult (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="adult-price" class="money-value">0.00</span></td>
+                      </tr>
+                      <tr class="temp-departure-show">
+                        <td class="table-item item-pass">Child (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="child-price" class="money-value">0.00</span></td>
+                      </tr>
+                      <tr class="temp-departure-show">
+                        <td colspan="2">
+                          <div class="line"></div>
+                        </td>
+                      </tr>
+                      <tr class="temp-departure-show">
+                        <td class="table-item item-subtotal item-last">Subtotal</td>
+                        <td class="table-item item-price item-subtotal item-last"><span
+                            class="money-currency">$</span><span class="money-value">0.00</span></td>
+                      </tr>
+                    </tbody>
+
+                    <tbody class="summary-item">
+                      <tr>
+                        <td colspan="2" class="table-item item-heading">Rottnest to Hillarys Ferry Ticket</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="table-item item-subheading">Tue, 05 Jan 2021 <span
+                            class="write-return-time"></span></td>
+                      </tr>
+                      <tr class="temp-return-show">
+                        <td colspan="2" class="table-item item-fare-type item-return-fare-type">
+                          <span class="everyday-fare"> Everyday Fare</span></td>
+                      </tr>
+                      <tr class="temp-return-show">
+                        <td class="table-item item-pass">Adult (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="adult-price" class="money-value">0.00</span></td>
+                      </tr>
+                      <tr class="temp-return-show">
+                        <td class="table-item item-pass">Child (x1)</td>
+                        <td class="table-item item-pass-price"><span class="money-currency">$</span><span
+                            data-attribute="child-price" class="money-value">0.00</span></td>
+                      </tr>
+                      <tr class="temp-return-show">
+                        <td colspan="2">
+                          <div class="line"></div>
+                        </td>
+                      </tr>
+                      <tr class="temp-return-show">
+                        <td class="table-item item-subtotal item-last">Subtotal</td>
+                        <td class="table-item item-price item-subtotal item-last"><span
+                            class="money-currency">$</span><span class="money-value">55.00</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+              <!-- @BusPickup-->
+              <div class="card temp-bus-show">
+                <div class="card-header">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#bus"
+                    aria-expanded="true" aria-controls="bus">
+                    <i class="demo-icon icon-title icon-bus"></i>
+                    Bus pickup
+                    <div class="icon-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </button>
+                </div>
+                <div id="bus" class="booking-body collapse show" aria-labelledby="bus">
+                  <table class="booking-table">
+                    <tbody class="summary-item">
+                      <tr>
+                        <td class="table-item item-subheading print-pickup-point" colspan="2"></td>
+                      </tr>
+                      <tr>
+                        <td class="table-item item-pass">Adult (x1)</td>
+                        <td class="table-item item-pass-price"> <span class="money-currency">$</span><span
+                            class="money-value" data-attribute="adult-price">0.00</span></td>
+                      </tr>
+                      <tr>
+                        <td class="table-item item-pass">Child (x1)</td>
+                        <td class="table-item item-pass-price"> <span class="money-currency">$</span><span
+                            class="money-value" data-attribute="child-price">0.00</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <div class="line"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table-item item-subtotal item-last">Subtotal</td>
+                        <td class="table-item item-price item-subtotal item-last"> <span
+                            class="money-currency">$</span><span class="money-value">0.00</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+              <!-- @Coupon-->
+              <div class="card">
+                <div class="card-header">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#coupon" aria-expanded="true" aria-controls="coupon">
+                  <i class="icon-title fas fa-tag"></i>
+                  Coupon Discount
+                    <div class="icon-toggle">
+                      <i class="fas fa-chevron-up"></i>
+                    </div>
+                  </button>
+                </div>
+
+                <div id="coupon" class="booking-body collapse show" aria-labelledby="ferries">
+                  <table class="booking-table">
+                    <tbody class="summary-coupon">
+                      <tr>
+                        <td class="table-item item-last item-heading">
+                          Coupon Code
+                        </td>
+                        <td id="couponRemove" class="table-item item-last text-right item-heading">
+                          <button id="removeCouponBtn" class="btn btn-primary btn-xs" style="display: none;">Remove</button>
+                        </td>
+                      </tr>
+                      <tr class="coupon-input-row">
+                        <td colspan="2" class="table-item coupon-input-col form-group item-last"><span class="input-group"><input type="text" id="couponInput" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="Coupon Code" class="text-uppercase form-control">
+                            <button id="couponBtn" class="btn btn-primary btn-xs">Apply</button></span>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- @Total-->
+              <div class="grand-total">
+                <table class="booking-table">
+                  <tbody>
+                    <tr>
+                      <td class="table-item item-total">Current Total</td>
+                      <td class="table-item item-total item-price"><span class="money-currency">$</span> <span class="money-value">26.50</span></td>
+                    </tr>
+                  </tbody>
+
+
+                </table>
+
+              </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="cta-wrapper">
+    <div class="container">
+      <div class="cta-row">
+        <div class="cta-item">
+          <a href="../index.html" class="back-btn"><i class="fas fa-chevron-left mr-1"></i>Start again</a>
+        </div>
+
+        <div class="cta-item cta-total text-uppercase text-center">
+          Current total : <span class="cta-current-total"><span class="money-currency">$</span>
+            <span class="money-value">26.50</span></span>
+        </div>
+        <div class="cta-item cta-button text-md-right text-center">
+          <button id="gotToLuggage" class="btn cta-btn disabled">Continue to Luggage</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="/contact-us" target="_blank"> Need Help? Contact us </a>
+        <a href="/term-conditions" target="_blank"> Terms & Conditions </a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="busReminder" tabindex="-1" data-backdrop="static" role="dialog"
+    aria-labelledby="alertModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Do you need transport to & from Hillarys?</h5>
+
+        </div>
+        <div class="modal-body">
+          Rottnest fast ferries provides free coach transfers from selected hotels to our ferry terminal at Hillarys
+          Boat Harbour.
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="continueToLuggage" class="btn btn-danger btn-sm">No, continue to luggage </button>
+          <button type="button" id="openBusModal" class="btn btn-primary btn-sm">Yes, add bus pickup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">OKAY</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS Added -->
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="../js/vendor/jquery-ui.min.js"></script>
+  <script src="../js/vendor/vue-select.js"></script>
+  <script src="../js/vendor/popper.min.js"></script>
+  <script src="../js/vendor/moment.min.js"></script>
+  <script src="../js/vendor/daterangepicker.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+
+
+
+  <!-- JS Added -->
+  <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

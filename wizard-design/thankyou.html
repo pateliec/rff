@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rottnest Fast Ferries</title>
+    <meta name="description" content="Book your Trip with Rottnest Fast Ferries">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="Select Luggage - Rottnest Fast Ferries">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/lgz4anw.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vue-select.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="site-header">
+        <nav
+            class="navbar container flex-row align-items-center justify-content-between pt-3 px-md-4 color-white bottom-wave box-shadow">
+
+            <button id="navToggle" class="custom-toggle navbar-toggler" type="button">
+                <i class="text-white fas fa-bars"></i>
+            </button>
+
+            <a class="my-0 mr-md-auto mb-sm-2 logo-wrapper" href="index.html" aria-label="Product">
+                <img class="logo mx-auto" src="img/Rottnest-Fast-Ferries_logo.png" alt="Rottnest Fast Ferries Logo">
+            </a>
+
+            <div class="dropdown">
+                <a class="p-2 text-white dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"><i class="ml-2 mr-2 fas fa-sign-in-alt d-none d-sm-inline-block"></i>Log
+                    in</a>
+                <div class="dropdown-menu dropdown-menu-right text-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-dark" href="#"><i class="fas fa-user mr-2"></i>Customer Login</a>
+                    <a class="dropdown-item text-dark" href="#"><i class="demo-icon agent-icon mr-2"></i>Agent Login</a>
+                </div>
+            </div>
+
+            <!-- Navigation-->
+            <div id="navbarNav" class="sidenav">
+                <button class="closeBtn"><i class="fas fa-times"></i></button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class=" p-2 text-white nav-item nav-link " href="#"><i
+                                class="ml-2 mr-2 icon demo-icon gift-card-icon"></i>Gift Cards</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <main id="app" class="body-wrapper wizard">
+
+       <div class="thankyou-wrapper px-3 py-5" style="max-width:1400px; margin:0 auto">
+          <div class="row align-items-center">
+        
+            <div class="col-lg-7 col-md-12">
+                <img src="img/thankyou.jpg" alt="thank you" class="img-responsive thankyou-img"> 
+
+            </div>
+            <div class="col-lg-5 col-md-12 ">
+                <h1 class="freeland text-lg-left text-center">Thank you</h1>
+                <h5 class="text-lg-left text-center">for booking with Rottnest Fast Ferries.</h5>
+
+                <ul class="detail">
+                    <li>Your Booking Reference is: #121231</li>
+                    <li>We have sent a booking confirmation to grace.kaspe@gmail.com.</li>
+                    <li>If you have any questions please give us a call on 22212121.</li>
+                </ul>
+            </div>
+         </div>
+       </div>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/contact-us" target="_blank"> Need Help? Contact us </a>
+                <a href="/term-conditions" target="_blank"> Terms & Conditions </a>
+            </nav>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">OKAY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <!-- JS Added 
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script>-->
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="../js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="../js/vendor/jquery-ui.min.js"></script>
+    <script src="../js/vendor/vue-select.js"></script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/vendor/moment.min.js"></script>
+    <script src="../js/vendor/daterangepicker.min.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+
+
+    <!-- JS Added -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

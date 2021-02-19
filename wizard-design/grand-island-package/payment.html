@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rottnest Fast Ferries</title>
+    <meta name="description" content="Book your Trip with Rottnest Fast Ferries">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="Select Luggage - Rottnest Fast Ferries">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">  
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/lgz4anw.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vue-select.css" />
+
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="site-header">
+        <nav
+          class="navbar container flex-row align-items-center justify-content-between pt-3 px-md-4 color-white bottom-wave box-shadow">
+    
+          <button id="navToggle" class="custom-toggle navbar-toggler" type="button">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+    
+          <a class="my-0 mr-md-auto mb-sm-2 logo-wrapper" href="../index.html" aria-label="Product">
+            <img class="logo mx-auto" src="../img/Rottnest-Fast-Ferries_logo.png" alt="Rottnest Fast Ferries Logo">
+          </a>
+    
+          <div class="dropdown">
+            <a class="p-2 text-white dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><i class="ml-2 mr-2 fas fa-sign-in-alt d-none d-sm-inline-block"></i>Log in</a>
+            <div class="dropdown-menu dropdown-menu-right text-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-dark" href="#"><i class="fas fa-user mr-2"></i>Customer Login</a>
+              <a class="dropdown-item text-dark" href="#"><i class="demo-icon agent-icon mr-2"></i>Agent Login</a>
+            </div>
+          </div>
+    
+          <!-- Navigation-->
+          <div id="navbarNav" class="sidenav">
+            <button class="closeBtn"><i class="fas fa-times"></i></button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class=" p-2 text-white nav-item nav-link " href="#"><i class="ml-2 mr-2 icon demo-icon gift-card-icon"></i>Gift Cards</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <!-- Main -->
+    <main id="app" class="body-wrapper wizard">
+
+        <div class="container">
+            <!-- Search Header -->
+            <section class="search-header py-lg-4 py-2">
+                <div class="row ">
+                  <div class="col-md-8">
+                    <h1 class="inline-heading">Grand Island Package</h1> <span class="edit-search"><a href="../index.html" class="mx-md-3">Change Search<i class="fas fa-pencil-alt ml-2"></i></a></span>
+                    <h5> Included in this booking:</h5>
+                    <ul>
+                      <li> Same day return ferry ticket</li>
+                      <li> Rottnest Island admission ticket</li>
+                      <li> Morning tea at Hillarys Boat Harbour</li>
+                      <li> Full-day tour host</li>
+                      <li> 4 hour island tour in air conditioned comfort, taking in the amaizing flora and fauna of the island with a unique historic train ride. </li>
+                      <li> and any selected extras</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 d-lg-block d-none">
+                    <img class="img-responsive" src="../img/grand-isalnd-tour.jpg" alt="Rottest Ferries">
+                  </div>
+                </div>
+            </section>
+
+            <!-- Steps Guide -->
+            <section class="booking-navigation py-lg-4 py-2">
+                <div class="d-flex flex-row step-groups">
+                    <a href="select-ferries.html" class="p-2 step step-4 completed">
+                        <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+                            <div class="d-md-block d-none step-jumbo mr-2">1</div>
+                            <div class="text-uppercase step-title">
+                                <i class="demo-icon ferry-icon"> </i> <br>
+                                Ferries
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="select-extras.html" class="p-2 step step-4 completed">
+                        <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+                            <div class="d-md-block d-none step-jumbo mr-2">2</div>
+                            <div class="text-uppercase step-title">
+                                <i class="demo-icon extras-icon"></i> <br>
+                                Extras
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="passenger-details.html" class="p-2 step step-4 completed">
+                        <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+                            <div class="d-md-block d-none step-jumbo mr-2">3</div>
+                            <div class="text-uppercase step-title">
+                                <i class="fas fa-user "></i> <br>
+                                Passenger Details
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="p-2 step step-4 active">
+                        <div class="d-flex flex-md-row flex-column align-items-center justify-content-center">
+                            <div class="d-md-block d-none step-jumbo mr-2">4</div>
+                            <div class="text-uppercase step-title">
+                                <i class="demo-icon dollar-icon"></i> <br>
+                                Payment
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="reviewBooking py-3">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12" style="margin: 0 auto;" >
+                        <h2>Review your Booking</h2>
+                        <p>Please review your booking thoroughly.</p>
+                    
+                        <!-- Booking Summary-->
+                        <div class="booking-summary-wrapper border rounded mt-2 mb-4">
+                            <div class="large booking-summary-header p-2 rounded-top">
+                                <h3>Booking Details</h3>
+                                <h5 class="text-white product-title">Grand Island Package</h5>
+                            </div>
+                            <div class="large booking-body rounded-top">
+                                <table class="booking-table">
+                                    <tbody class="summary-item">
+                                        <tr>
+                                            <td colspan="2" class="table-item item-heading"> Rottnest Island Admission
+                                                Fee <i data-toggle="tooltip" title="" data-placement="top" tab-index="0"
+                                                    data-original-title="The entrance fee to an A-Class nature reserve and contributes to the conservation of the island. This is a government tax payable by all visitors to the island and is collected by the ferry companies on behalf of the Rottnest Island Authority"
+                                                    class="demo-icon icon-awesome-info-circle-icon"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-pass">Adult (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="adult-price"
+                                                    class="money-value">19.50</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-pass">Kid (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="child-price"
+                                                    class="money-value">7.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-subtotal item-last">Subtotal </td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">26.50</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="summary-item">
+                                        <tr>
+                                            <td colspan="2" class="table-item item-heading">Hillarys to Rottnest Ferry
+                                                Ticket</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-item item-subheading">Sun, 03 Jan 2021 <span
+                                                    class="write-depart-time"> -
+                                                    7:30am
+                                                </span></td>
+                                        </tr>
+                                        <tr class="temp-departure-show" style="display: table-row;">
+                                            <td colspan="2" class="table-item item-fare-type item-depart-fare-type">
+                                                <span class="package-fare">Package Fare</span></td>
+                                        </tr>
+                                        <tr class="temp-departure-show" style="display: table-row;">
+                                            <td class="table-item item-pass">Adult (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="adult-price"
+                                                    class="money-value">186.00</span></td>
+                                        </tr>
+                                        <tr class="temp-departure-show" style="display: table-row;">
+                                            <td class="table-item item-pass">Child (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="child-price"
+                                                    class="money-value">120.00</span></td>
+                                        </tr>
+                                        <tr class="temp-departure-show" style="display: table-row;">
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="temp-departure-show" style="display: table-row;">
+                                            <td class="table-item item-subtotal item-last">Subtotal</td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">306.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="summary-item">
+                                        <tr>
+                                            <td colspan="2" class="table-item item-heading">Rottnest to Hillarys Ferry
+                                                Ticket</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-item item-subheading">Sun, 03 Jan 2021 <span
+                                                    class="write-return-time"> -
+                                                    4:30pm
+                                                </span></td>
+                                        </tr>
+                                        <tr class="temp-return-show" style="display: table-row;">
+                                            <td colspan="2" class="table-item item-fare-type item-return-fare-type">
+                                                <span class="package-fare">Package Fare</span></td>
+                                        </tr>
+                                        <tr class="temp-return-show" style="display: table-row;">
+                                            <td class="table-item item-pass">Adult (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="adult-price"
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="temp-return-show" style="display: table-row;">
+                                            <td class="table-item item-pass">Child (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="child-price"
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="temp-return-show" style="display: table-row;">
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="temp-return-show" style="display: table-row;">
+                                            <td class="table-item item-subtotal item-last">Subtotal</td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="summary-item temp-bus-show" style="display: table-row-group;">
+                                        <tr>
+                                            <td colspan="2" class="table-item item-heading">Bus Pickup</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="table-item item-subheading print-pickup-point">Great
+                                                Southern Hotel -
+                                                6:25am</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-pass">Adult (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="adult-price"
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-pass">Child (x1)</td>
+                                            <td class="table-item item-pass-price"><span
+                                                    class="money-currency">$</span><span data-attribute="child-price"
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-subtotal item-last">Subtotal</td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span class="money-value">0.00</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="summary-item">
+                                        <tr>
+                                            <td colspan="2" class="table-item item-heading">Extras</td>
+                                        </tr>
+                                        <tr class="no-booking">
+                                            <td colspan="2" class="table-item">No Item Selected</td>
+                                        </tr>
+                                      
+                                        <tr class="snorkelling-show" style="display:none">
+                                            <td class="table-item item-pass">Snorkel Set (x<span
+                                                    class="print-snorkelling-quantity">0</span>) (x<span
+                                                    class="print-snorkelling-day">0</span>&nbsp;days)</td>
+                                            <td class="table-item item-pass-price print-snorkelling-price"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="busPass-show" style="display: none;">
+                                            <td colspan="2" class="table-item item-subsubheading">Island Explorer Bus
+                                                Pass</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <table class="tour-table">
+                                                    <tbody>
+                                                        <tr class="busPass-adult-show" style="display: none;">
+                                                            <td class="table-item item-pass">Adult (x<span
+                                                                    class="print-busPass-adultQuantity">0</span>)</td>
+                                                            <td
+                                                                class="table-item item-pass-price print-busPass-adultPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="busPass-child-show" style="display: none;">
+                                                            <td class="table-item item-pass">Child (x<span
+                                                                    class="print-busPass-childQuantity">0</span>)</td>
+                                                            <td
+                                                                class="table-item item-pass-price print-busPass-childPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="busPass-consession-show" style="display: none;">
+                                                            <td class="table-item item-pass">Concession (x<span
+                                                                    class="print-busPass-consessionQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-busPass-consessionPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="historicalTour-show" style="display:none;">
+                                            <td colspan="2" class="table-item item-subsubheading">Historical Train &amp;
+                                                Tunnel Tour -&nbsp;<span class="print-historicalTour-date tour-date">03/01/21</span> - <span class="print-historicalTour-time">13:30</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <table class="tour-table">
+                                                    <tbody>
+                                                        <tr class="historicalTour-adult-show" style="display:none;">
+                                                            <td class="table-item item-pass">Adult (x<span
+                                                                    class="print-historicalTour-adultQuantity">0</span>)
+                                                            </td>
+                                                            <td class="table-item item-pass-price print-historicalTour-adultPrice">
+                                                                <span class="money-currency">$</span><span class="money-value">0.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="historicalTour-child-show" style="display:none;">
+                                                            <td class="table-item item-pass">Child (x<span class="print-historicalTour-childQuantity">0</span>)
+                                                            </td>
+                                                            <td class="table-item item-pass-price print-historicalTour-childPrice">
+                                                                <span class="money-currency">$</span><span class="money-value">0.00</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="historicalTour-consession-show" style="display:none;">
+                                                            <td class="table-item item-pass">Concession (x<span
+                                                                    class="print-historicalTour-consessionQuantity">0</span>)
+                                                            </td>
+                                                            <td class="table-item item-pass-price print-historicalTour-consessionPrice">
+                                                                <span class="money-currency">$</span><span class="money-value">0.00</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="baySeekerIslandTour-show" style="display:none;">
+                                            <td colspan="2" class="table-item item-subsubheading">Bayseeker Island Tour
+                                                -&nbsp;<span
+                                                    class="print-baySeekerIslandTour-date tour-date">04/01/21</span> -
+                                                <span class="print-baySeekerIslandTour-time">13:45</span></td>
+                                        </tr>
+                                        <tr class="baySeekerIslandTour-show" style="display:none;">
+                                            <td colspan="2">
+                                                <table class="tour-table" style="display: none;">
+                                                    <tbody>
+                                                        <tr class="baySeekerIslandTour-adult-show" style="display: none;">
+                                                            <td class="table-item item-pass">Adult (x<span
+                                                                    class="print-baySeekerIslandTour-adultQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-baySeekerIslandTour-adultPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="baySeekerIslandTour-child-show"
+                                                            style="display: none;">
+                                                            <td class="table-item item-pass">Child (x<span
+                                                                    class="print-baySeekerIslandTour-childQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-baySeekerIslandTour-childPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="baySeekerIslandTour-consession-show"
+                                                            style="display: none;">
+                                                            <td class="table-item item-pass">Concession (x<span
+                                                                    class="print-baySeekerIslandTour-consessionQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-baySeekerIslandTour-consessionPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="grandIslandTour-show" style="display: none;">
+                                            <td colspan="2" class="table-item item-subsubheading">Grand Island Tour
+                                                -&nbsp;<span class="print-grandIslandTour-date tour-date"></span>-<span
+                                                    class="print-grandIslandTour-time"></span></td>
+                                        </tr>
+                                        <tr class="grandIslandTour-show" style="display: none;">
+                                            <td colspan="2">
+                                                <table class="tour-table">
+                                                    <tbody>
+                                                        <tr class="grandIslandTour-adult-show" style="display: none;">
+                                                            <td class="table-item item-pass">Adult (x<span
+                                                                    class="print-grandIslandTour-adultQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-grandIslandTour-adultPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="grandIslandTour-child-show" style="display: none;">
+                                                            <td class="table-item item-pass">Child (x<span
+                                                                    class="print-grandIslandTour-childQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-grandIslandTour-childPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                        <tr class="grandIslandTour-consession-show"
+                                                            style="display: none;">
+                                                            <td class="table-item item-pass">Concession (x<span
+                                                                    class="print-grandIslandTour-consessionQuantity">0</span>)
+                                                            </td>
+                                                            <td
+                                                                class="table-item item-pass-price print-grandIslandTour-consessionPrice">
+                                                                <span class="money-currency">$</span><span
+                                                                    class="money-value">0.00</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="small-tshirt-show tshirt-summary" style="display: none;">
+                                            <td class="table-item item-pass">Unisex T-shirt - S (x<span
+                                                    class="print-small-tshirt-quantity">0</span>) </td>
+                                            <td class="table-item item-pass-price print-small-tshirt-price"><span
+                                                    class="money-currency">$</span><span class="money-value">0.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="medium-tshirt-show tshirt-summary" style="display: none;">
+                                            <td class="table-item item-pass">Unisex T-shirt - M (x<span
+                                                    class="print-medium-tshirt-quantity">0</span>) </td>
+                                            <td class="table-item item-pass-price print-medium-tshirt-price"><span
+                                                    class="money-currency">$</span><span class="money-value">0.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="large-tshirt-show tshirt-summary" style="display: table-row;">
+                                            <td class="table-item item-pass">Unisex T-shirt - L (x<span
+                                                    class="print-large-tshirt-quantity">1</span>) </td>
+                                            <td class="table-item item-pass-price print-large-tshirt-price"><span
+                                                    class="money-currency">$</span><span class="money-value">26.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="extra-large-tshirt-show tshirt-summary" style="display: none;">
+                                            <td class="table-item item-pass">Unisex T-shirt - XL (x<span
+                                                    class="print-extra-large-tshirt-quantity">0</span>) </td>
+                                            <td class="table-item item-pass-price print-extra-large-tshirt-price"><span
+                                                    class="money-currency">$</span><span class="money-value">0.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="extra-extra-large-tshirt-show tshirt-summary" style="display: none;">
+                                            <td class="table-item item-pass">Unisex T-shirt - XXL (x<span
+                                                    class="print-extra-extra-large-tshirt-quantity">0</span>) </td>
+                                            <td class="table-item item-pass-price print-extra-extra-large-tshirt-price">
+                                                <span class="money-currency">$</span><span
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-subtotal item-last">Subtotal</td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">26.00</span></td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody class="summary-item">
+                                        <tr>
+                                            <td class="table-item item-heading" colspan="2">Mobility Items</td>
+                                        </tr>
+                                        <tr class="no-booking active">
+                                            <td colspan="2" class="table-item">No Item Selected</td>
+                                        </tr>
+                                        <tr class="wheelchair-show summary-mobility" style="display: none;">
+                                            <td class="table-item item-pass">Wheelchair (x<span class="print-wheelchair-quantity"></span>)</td>
+                                            <td class="table-item item-pass-price print-wheelchair-price"><span class="money-currency">$</span><span class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="pram-show summary-mobility" style="display: none;">
+                                            <td class="table-item item-pass">Pram/Stroller (x<span class="print-pram-quantity"></span>)</td>
+                                            <td class="table-item item-pass-price print-pram-price"><span class="money-currency">$</span><span class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="walking-show summary-mobility" style="display: none;">
+                                            <td class="table-item item-pass">Walking Frame (x<span class="print-walking-quantity"></span>)</td>
+                                            <td class="table-item item-pass-price print-walking-price"><span class="money-currency">$</span><span class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr class="scooter-show summary-mobility" style="display: none;">
+                                            <td class="table-item item-pass">Walking Fram (x<span class="print-scooter-quantity"></span>)</td>
+                                            <td class="table-item item-pass-price print-scooter-price"><span class="money-currency">$</span><span class="money-value">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="line"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-item item-subtotal item-last">Subtotal</td>
+                                            <td class="table-item item-price item-subtotal item-last"><span
+                                                    class="money-currency">$</span><span
+                                                    class="money-value">0.00</span></td>
+                                        </tr>
+                                    </tbody>
+                
+                                    <tbody class="summary-coupon active">
+                                        <tr>
+                                            <td class="table-item item-heading">Coupon Discount</td>
+                                            <td id="couponRemove" class="table-item item-heading text-right">
+                                                <button id="removeCouponBtn"
+                                                    class="btn btn-primary btn-xs">Remove</button></td>
+                                        </tr>
+                                        <tr class="coupon-input-row" style="display: none;">
+                                            <td colspan="2" class="table-item coupon-input-col form-group item-last">
+                                                <span class="input-group">
+                                                <input type="text" id="couponInput" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="Coupon Code" class="text-uppercase form-control">
+                                                <button id="couponBtn" class="btn btn-primary btn-xs">Apply</button></td>
+                                            </span>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="coupon-bg">
+                                                <table class="coupon-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                class="table-item coupon-input-col form-group item-last">
+                                                                <span class="coupon-code">HAPPYDAY</span></td>
+                                                            <td class="table-item item-last item-coupon-btn item-price">
+                                                                <span class="money-currency">-$</span><span
+                                                                    class="money-value">35.85</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-item item-total">Total</td>
+                                            <td class="table-item item-total item-price"><span class="money-currency">$</span> <span class="money-value">322.65</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-item single-item">Credit card Surcharge (1.5%) </td>
+                                            <td class="table-item item-price single-item surcharge"><span class="money-currency">$</span> <span class="money-value">4.83</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-item item-final">Final Price</td>
+                                            <td class="table-item item-final item-price"><span
+                                                    class="money-currency">$</span> <span
+                                                    class="money-value">327.48</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="passenger-summary-wrapper mt-2 mb-4">
+                            <div class="card">
+                                <div class="card-header passenger-summary">
+                                    <h3 >Passenger Details </h3>
+                                    <h5 > 1 Adult & 1 Child</h5>
+                                </div>
+                                <div class="card-item">
+                                    <div class="card-body">
+                                        <h4 class="extra-title"><span class="name">Grace Kaspe</span> - <span class="pass-cat">Adult</span></h4>
+                                        <ul class="info-list">
+                                            <li>Email Address: grace@flametreecreative.com.au</li>
+                                            <li>Addreess: 459 Stirling Highway, Cottesloe 6107 Western Australia, Australia</li>
+                                            <li>Date of Birth: 14/08/1996</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card-item">
+                                    <div class="card-body">
+                                        <h4 class="extra-title"><span class="name">Little Grace</span> - <span class="pass-cat">Child</span></h4>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="agreement">
+                           
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox" id="bookingConfirmed">
+                                <label class="form-check-label" for="bookingConfirmed">
+                                <span class="inst-bold">My booking details are correct.</span><br>
+                                I have checked my booking details and I confirmed that my booking details are correct
+                                </label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox" id="termCond">
+                                <label class="form-check-label" for="termCond">
+                                <span class="inst-bold">I have read and agree to the <a href="https://www.rottnestfastferries.com.au/terms-conditions/" target="_blanl">terms and conditions</a> </span><br>
+                                If you require specific or mobility assistance please contact us on (08) 9246 1039 to discuss your requirements
+                                </label>
+                            </div>
+                        </div>
+
+                      
+                        
+
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="payment" class="py-3">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12" style="margin: 0 auto;" >
+                        <h2>Payment</h2>
+                        <p class="instruction">All transactions are secure and encrypted. You will receive an email confirmation containing your booking details, which needs to be presented on the day of your trip.</p>
+
+                        <div class="card">
+                            <div class="card-header">
+                                Credit Card
+                            </div>
+                            <div class="card-body">
+                                <div class="row pb-3">
+                                    <div class="col-md-6">Merchant Reference: <strong>355753</strong></div>
+                                    <div class="col-md-6 text-md-right final-price">Final price to pay:<span class="bold"><span class="money-currency">$</span><span class="money-value">327.48</span></span></div>
+                                </div>
+                                <form id="payment">
+                                    <div class="form-group required">
+                                        <label for="card_number">Card Number</label>
+                                        <input type="text" class="form-control" name="card_number" >
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="card_name">Name on Card</label>
+                                        <input type="text" class="form-control" name="card_name" >
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="expiry_date">Expiry Date</label>
+                                        <input type="text" class="form-control" name="expiry_date" placeholder="mm/dd">
+                                    </div>
+                                    <div class="form-group required">
+                                        <label for="cvc">CVC <i class="demo-icon icon-awesome-info-circle-icon"
+                                            data-toggle="tooltip" title=" Card Verification Code, or CVC, is an extra code printed on your debit or credit card"
+                                            data-placement="top" tab-index="0"></i> </label>
+                                        <input type="number" class="form-control" name="cvc">
+                                    </div>
+                                    <div class="form-group text-right">
+                                    <button  onclick="window.location.href='../thankyou.html'" id="paymentBtn" class="btn btn-primary" disabled>PAY NOW</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+    
+                    </div>
+
+
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+  
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="/contact-us" target="_blank"> Need Help? Contact us </a>
+                <a href="/term-conditions" target="_blank"> Terms & Conditions </a>
+            </nav>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">OKAY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <!-- JS Added 
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"></script>-->
+    <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="../js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="../js/vendor/jquery-ui.min.js"></script>
+    <script src="../js/vendor/vue-select.js"></script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/vendor/moment.min.js"></script>
+    <script src="../js/vendor/daterangepicker.min.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+
+
+    <!-- JS Added -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
